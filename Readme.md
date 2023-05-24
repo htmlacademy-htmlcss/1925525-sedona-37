@@ -2,6 +2,7 @@
 
 * Студент: [Ахмед Малачиев](https://up.htmlacademy.ru/htmlcss/37/user/1925525).
 * Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
+* [Для просмотра](https://akhmed265.github.io/1925525-sedona-37/).
 
 ---
 
