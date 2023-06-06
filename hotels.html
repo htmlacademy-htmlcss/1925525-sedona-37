@@ -2,42 +2,57 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Hotels</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Гостиницы</title>
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <a href="index.html" class="header-left">
-          <img
-            src="./images/logo.svg"
-            alt="логотип Седона"
-            class="header-logo"
-          />
-        </a>
+      <header class="main-header">
+        <nav class="main-menu">
+          <a class="logo-link" href="./index.html" aria-current="page">
+            <img
+              src="img/logo.svg"
+              width="140"
+              height="70"
+              alt="логотип sedona."
+              class="image-logo"
+            />
+          </a>
+          <ul class="main-menu-list">
+            <li class="main-menu-item">
+              <a
+                class="main-menu-link"
+                href="./index.html"
+                aria-current="page"
+                >Главная</a
+              >
+            </li>
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="#">О Cедоне</a>
+            </li>
+            <li class="main-menu-item main-menu-item--current">
+              <a class="main-menu-link" href="./hotels.html">Гостиницы</a>
+            </li>
+          </ul>
 
-        <ul class="header-menu">
-          <li class="header-menu-items">
-            <a href="./index.html" class="header-menu-link">Главная</a>
-          </li>
-          <li class="header-menu-items">
-            <a href="#" class="header-menu-link">О Седоне</a>
-          </li>
-          <li class="header-menu-items">
-            <a href="./hotels.html" class="header-menu-link">Гостиницы</a>
-          </li>
-        </ul>
-
-        <ul class="header-right">
-          <li class="header-right-items">
-            <a href="#" class="header-search">Поиск</a>
-          </li>
-          <li class="header-right-items">
-            <a href="#" class="header-favorites">Избранное</a>
-          </li>
-          <li class="header-right-items">
-            <button class="main-btn header-btn">ХОЧУ СЮДА</button>
-          </li>
-        </ul>
+          <ul class="actions">
+            <li class="actions-item">
+              <a class="actions-link" href="#"
+                ><span class="visually-hidden">Поиск</span></a
+              >
+            </li>
+            <li class="actions-item">
+              <a class="actions-link" href="#"
+                ><span class="visually-hidden">Избранное</span></a
+              >
+            </li>
+            <li class="actions-item">
+              <a class="actions-link" href="#"
+                >Хочу сюда!</a
+              >
+            </li>
+          </ul>
+        </nav>
       </header>
 
       <section class="filters">
@@ -180,22 +195,22 @@
 
         <ul class="hotels-navigation-lists">
           <li class="hotels-navigation-item">
-            <button class="hotels-navigation-btn">1</button>
+            <button type="button" class="hotels-navigation-btn">1</button>
           </li>
           <li class="hotels-navigation-item">
-            <button class="hotels-navigation-btn">2</button>
+            <button type="button" class="hotels-navigation-btn">2</button>
           </li>
           <li class="hotels-navigation-item">
-            <button class="hotels-navigation-btn">3</button>
+            <button type="button" class="hotels-navigation-btn">3</button>
           </li>
           <li class="hotels-navigation-item">
-            <button class="hotels-navigation-btn">4</button>
+            <button type="button" class="hotels-navigation-btn">4</button>
           </li>
           <li class="hotels-navigation-item">
-            <button class="hotels-navigation-btn">...</button>
+            <button type="button" class="hotels-navigation-btn">...</button>
           </li>
           <li class="hotels-navigation-item">
-            <button class="hotels-navigation-btn">10</button>
+            <button type="button" class="hotels-navigation-btn">10</button>
           </li>
         </ul>
       </div>
@@ -210,23 +225,32 @@
           <button class="main-btn subscribe-btn">Подписаться</button>
         </form>
       </section>
-      <footer class="footer">
-        <ul class="footer-social-list">
-          <li class="social-item">
-            <a href="#" class="footer-social-link"></a>
+
+      <footer class="main-footer">
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a class="socials-link" href="https://vk.com/htmlacademy">
+              <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9498 0.948C24.1158 0.402 23.9498 0 23.1548 0H20.5298C19.8618 0 19.5538 0.347 19.3868 0.73C19.3868 0.73 18.0518 3.926 16.1608 6.002C15.5488 6.604 15.2708 6.795 14.9368 6.795C14.7698 6.795 14.5188 6.604 14.5188 6.057V0.948C14.5188 0.292 14.3348 0 13.7788 0H9.65076C9.23376 0 8.98276 0.304 8.98276 0.593C8.98276 1.214 9.92876 1.358 10.0258 3.106V6.904C10.0258 7.737 9.87276 7.888 9.53876 7.888C8.64876 7.888 6.48376 4.677 5.19876 1.003C4.94976 0.288 4.69776 0 4.02676 0H1.39976C0.649756 0 0.499756 0.347 0.499756 0.73C0.499756 1.412 1.38976 4.8 4.64476 9.281C6.81476 12.341 9.86976 14 12.6528 14C14.3218 14 14.5278 13.632 14.5278 12.997V10.684C14.5278 9.947 14.6858 9.8 15.2148 9.8C15.6048 9.8 16.2718 9.992 17.8298 11.467C19.6098 13.216 19.9028 14 20.9048 14H23.5298C24.2798 14 24.6558 13.632 24.4398 12.904C24.2018 12.18 23.3518 11.129 22.2248 9.882C21.6128 9.172 20.6948 8.407 20.4158 8.024C20.0268 7.533 20.1378 7.314 20.4158 6.877C20.4158 6.877 23.6158 2.451 23.9488 0.948H23.9498Z" fill="#83B3D3"/>
+                </svg>
+              </a>
           </li>
-          <li class="social-item">
-            <a href="#" class="footer-social-link"></a>
+          <li class="socials-item">
+            <a class="socials-link" href="https://t.me/htmlacademy"
+              ><span class="visually-hidden">Telegram</span></a
+            >
           </li>
-          <li class="social-item">
-            <a href="#" class="footer-social-link"></a>
+          <li class="socials-item">
+            <a class="socials-link" href="Youtube"
+              ><span class="visually-hidden">Youtube</span></a
+            >
           </li>
         </ul>
-
-        <a href="tel:+78128121212" class="footer-number">+7 (812) 812-12-12</a>
-
-        <a href="#" class="footer-logo">
-          <img src="./images/html-academy.svg" alt="html-academy" />
+        <a class="main-footer-phone" href="tel:+78128121212"
+          >+7 (812) 812-12-12</a
+        >
+        <a class="main-footer-logo" href="https://htmlacademy.ru/">
+          <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
         </a>
       </footer>
     </div>
