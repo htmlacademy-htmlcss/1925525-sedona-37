@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -22,12 +22,7 @@
         <nav class="main-menu">
           <ul class="main-menu-list">
             <li class="main-menu-item main-menu-item--current">
-              <a
-                class="main-menu-link"
-                href="#"
-                aria-current="page"
-                >Главная</a
-              >
+              <a class="main-menu-link" href="#" aria-current="page">Главная</a>
             </li>
             <li class="main-menu-item">
               <a class="main-menu-link" href="#">О Cедоне</a>
@@ -41,18 +36,16 @@
         <ul class="actions">
           <li class="header-search">
             <a class="header-search-link" href="#"
-              ><span class="visually-hidden">Поиск</span></a
+              ><span class="visually-hidden">Поиск.</span></a
             >
           </li>
           <li class="header-favorite">
             <a class="header-favorite-link" href="#"
-              ><span class="visually-hidden">Избранное</span></a
+              ><span class="visually-hidden">Избранное.</span></a
             >
           </li>
           <li class="header-button">
-            <a class="header-button-link" href="#"
-              >Хочу сюда!</a
-            >
+            <a class="header-button-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </header>
@@ -70,18 +63,24 @@
         </section>
 
         <section class="benefits">
-          <h2 class="benefits-intro">
+          <h2 class="benefits-title">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
           </h2>
           <p class="benefits-sub-title">
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
           </p>
+
           <ul class="benefits-list">
-            <li class="benefits-item">
-              <h3 class="benefits-item-title">Настоящий городок</h3>
-              <p class="benefits-item-text">
-                Седона — не аттракцион для туристов, там течёт своя жизнь
-              </p>
+            <li class="benefits-item benefits-item--blue">
+              <div class="benefits-item-text">
+                <h3 class="benefits-item-title benefits-item--white">
+                  Настоящий городок
+                </h3>
+                <p class="benefits-item-description benefits-item--white">
+                  Седона — не аттракцион для туристов, там течёт своя жизнь
+                </p>
+              </div>
+              <img src="./img/photo-1.jpg" alt="" class="benefits-item-img" />
             </li>
             <li class="benefits-item">
               <h3 class="benefits-item-title">Небольшая площадь</h3>
@@ -101,36 +100,61 @@
                 Большинство едет в Гранд Каньон и толпится там
               </p>
             </li>
-            <li class="benefits-item">
-              <h3 class="benefits-item-title">Там есть мост дьявола</h3>
-              <p class="benefits-item-description">
-                Да, по нему можно пройти! Если вы осмелитесь, разумеется
-              </p>
+            <li class="benefits-item benefits-item--blue">
+              <img src="./img/photo-2.jpg" alt="" class="benefits-item-img" />
+
+              <div class="benefits-item-text">
+                <h3 class="benefits-item-title benefits-item--white">
+                  Там есть мост&nbsp;дьявола
+                </h3>
+                <p class="benefits-item-description benefits-item--white">
+                  Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                </p>
+              </div>
             </li>
           </ul>
         </section>
 
         <section class="services">
           <h2 class="services-title">
-            Приезжайте в Седону отдохнуть в комфорте и уюте!
+            Приезжайте в Седону отдохнуть в&nbsp;комфорте и уюте!
           </h2>
           <p class="services-sub-title">
             Опытный персонал и качественное обслуживание!
           </p>
+
           <ul class="services-list">
             <li class="services-item">
+              <img
+                src="./img/home.png"
+                alt="Жтльё"
+                width="75"
+                height="72"
+              />
               <h3 class="services-item-title">Жильё</h3>
               <p class="services-item-description">
                 Рекомендуем пожить в настоящем мотеле, всё как в кино!
               </p>
             </li>
             <li class="services-item">
+              <img
+                src="./img/food.png"
+                alt="Еда" width="75"
+                height="72"
+              />
               <h3 class="services-item-title">Еда</h3>
               <p class="services-item-description">
-                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                Всегда заказывайте топовый фирменный бургер, вы не
+                разочаруетесь!
               </p>
             </li>
             <li class="services-item">
+              <img
+                src="./img/present.png"
+                alt="Сувенир"
+                width="75"
+                height="72"
+              />
               <h3 class="services-item-title">Сувениры</h3>
               <p class="services-item-description">
                 Не только китайского, но и настоящего местного производства!
@@ -141,12 +165,12 @@
 
         <section class="search">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне.</h2>
-          <p class="search-intro">Заинтересовались?</p>
-          <p class="search-text">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          <h2 class="search-title">Заинтересовались?</h2>
+          <p class="search-description">
+            Укажите предполагаемые даты поездки, и&nbsp;мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
-          <a class="search-link" href="#">поиск гостиницы в седоне</a>
+          <button type="button" class="search-button">поиск гостиницы в седоне</button>
         </section>
 
         <!-- subscription -->
@@ -178,25 +202,24 @@
         <ul class="socials-list">
           <li class="socials-item">
             <a class="vk socials-link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Telegram</span>
+              <span class="visually-hidden">VK.</span>
             </a>
           </li>
           <li class="socials-item">
             <a class="telegram socials-link" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Telegram</span>
+              <span class="visually-hidden">Telegram.</span>
             </a>
           </li>
           <li class="socials-item">
             <a class="youtube socials-link" href="Youtube">
-              <span class="visually-hidden">Youtube</span>
+              <span class="visually-hidden">Youtube.</span>
             </a>
           </li>
         </ul>
         <a class="main-footer-phone" href="tel:+78128121212">
           +7 (812) 812-12-12
         </a>
-        <a class="main-footer-logo" href="https://htmlacademy.ru/">
-        </a>
+        <a class="main-footer-logo" href="https://htmlacademy.ru/"> </a>
       </footer>
     </div>
   </body>
