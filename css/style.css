@@ -469,7 +469,7 @@ body {
   background-image: url(../img/header-hotels.jpg);
   background-size: cover;
   background-color: #F2F2F2;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 37px;
   margin: 0;
   margin-bottom: 50px;
 }
@@ -536,7 +536,7 @@ body {
 }
 
 .filters-group:nth-child(1) {
-  padding-right: 70px;
+  padding-right: 45px;
 }
 
 .filters-group:nth-child(2) {
@@ -586,6 +586,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 55px;
 }
 
 .filters-button {
@@ -634,6 +635,7 @@ body {
   color: #333333;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  margin-right: 70px;
 }
 
 .card-toggle-list {
@@ -673,10 +675,11 @@ body {
 }
 
 .hotel-card-title {
-  margin-top: 16px;
+  margin-top: 10px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  margin-bottom: 0;
 }
 
 .hotel-card-info {
@@ -774,7 +777,7 @@ body {
 
 .subscribe-mail {
   text-align: center;
-  padding-top: 96px;
+  padding-top: 80px;
   padding-bottom: 104px;
 }
 
