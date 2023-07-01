@@ -180,7 +180,7 @@ body {
   line-height: 26px;
   color: #333333;
   margin-top: 0;
-  margin-bottom: 69px;
+  margin-bottom: 90px;
 }
 
 .benefits-list {
@@ -225,14 +225,32 @@ body {
 }
 
 .benefits-item-title {
+  position: relative;
   font-weight: 700;
   width: 175px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0;
   margin-right: auto;
   margin-left: auto;
+}
+
+.benefits-item-title::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 2px;
+  top: 86px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.benefits-item--light .benefits-item-title::after {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .benefits-item-description {
@@ -242,6 +260,8 @@ body {
   text-align: center;
   color: #333333;
   width: 230px;
+  margin-top: 63px;
+  margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
 }
@@ -349,6 +369,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   max-width: 592px;
+  margin-top: 0;
   margin-bottom: 54px;
   color: #333333;
 }
@@ -369,7 +390,7 @@ body {
   text-align: center;
   background-image: url(../img/banner-email.jpg);
   background-size: cover;
-  padding-top: 96px;
+  padding-top: 97px;
   padding-bottom: 104px;
   color: #FFFFFF;
 }
@@ -378,6 +399,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  margin-top: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
@@ -387,6 +409,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin-top: 0;
   margin-bottom: 54px;
   width: 475px;
 }
@@ -402,6 +425,7 @@ body {
   box-shadow: none;
   border: none;
   padding: 14px 20px;
+  font-size: 18px;
   width: 452px;
   height: 52px;
   border-radius: 4px 0 0 4px;
@@ -420,7 +444,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 70px 30px;
+  padding: 46px 70px 30px;
 }
 
 .socials-list {
@@ -456,7 +480,7 @@ body {
   line-height: 78px;
   color: var(--white-color);
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs {
@@ -508,6 +532,15 @@ body {
   border: none;
   color: var(--white-color);
   padding: 0;
+  margin: 0;
+}
+
+.filters-group:nth-child(1) {
+  padding-right: 70px;
+}
+
+.filters-group:nth-child(2) {
+  padding-right: 140px;
 }
 
 .filters-group-title {
@@ -588,6 +621,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .select-control {
@@ -606,6 +640,7 @@ body {
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
   gap: 8px;
 }
 
@@ -633,15 +668,15 @@ body {
 }
 
 .hotel-card-link {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
   color: #000000;
   text-decoration: none;
 }
 
 .hotel-card-title {
   margin-top: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .hotel-card-info {
