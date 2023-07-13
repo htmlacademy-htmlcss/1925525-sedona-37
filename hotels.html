@@ -39,9 +39,10 @@
             >
           </li>
           <li class="actions-item">
-            <a class="actions-link actions-favorite-link" href="#"
-              ><span class="visually-hidden">Избранное.</span></a
-            >
+            <a class="actions-link actions-favorite-link" href="#">
+              <span class="visually-hidden">Избранное.</span>
+              <span class="actions-favorite-number">12</span>
+            </a>
           </li>
           <li class="actions-item">
             <a class="button actions-button-link" href="#">Хочу сюда!</a>
@@ -66,35 +67,35 @@
           <fieldset class="filters-group">
             <legend class="filters-group-title">Инфраструктура:</legend>
             <ul class="filters-list">
-              <li class="filters-item item-marker">
-                <label class="control">
-                  <input
+              <li class="filters-item chekbox-form">
+                <input
                   class="control-input"
                   type="checkbox"
-                  name="pool"
+                  id="swimming-pool"
                   checked
                 >
+                <label class="control" for="swimming-pool">
                   Бассейн
                 </label>
               </li>
-              <li class="filters-item item-marker">
-                <label class="control">
-                  <input
+              <li class="filters-item chekbox-form">
+                <input
                     class="control-input"
                     type="checkbox"
-                    name="parking"
+                    id="parking"
                     checked
                   >
+                <label class="control" for="parking">
                    Парковка
                 </label>
               </li>
-              <li class="filters-item item-marker">
-                <label class="control">
-                  <input
+              <li class="filters-item chekbox-form">
+                <input
                     class="control-input"
                     type="checkbox"
-                    name="Wi-Fi"
+                    id="Wi-Fi"
                   >
+                <label class="control" for="Wi-Fi">
                   Wi-Fi
                 </label>
               </li>
@@ -104,37 +105,37 @@
           <fieldset class="filters-group">
             <legend class="filters-group-title">Тип жилья:</legend>
             <ul class="filters-list">
-              <li class="filters-item item-marker">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="radio"
-                    name="type-of-housing"
-                    value="hotel"
-                    checked
+              <li class="filters-item radio-form">
+                <input
+                  class="control-input"
+                  type="radio"
+                  name="type-of-housing"
+                  id="hotel"
+                  checked
                   >
-                    Гостиница
+                <label class="control" for="hotel">
+                  Гостиница
                 </label>
               </li>
-              <li class="filters-item item-marker">
-                <label class="control">
-                  <input
+              <li class="filters-item radio-form">
+                <input
                     class="control-input"
                     type="radio"
                     name="type-of-housing"
-                    value="motel"
+                    id="motel"
                   >
+                <label class="control" for="motel">
                  Мотель
                 </label>
               </li>
-              <li class="filters-item item-marker">
-                <label class="control">
-                  <input
+              <li class="filters-item radio-form">
+                <input
                     class="control-input"
                     type="radio"
                     name="type-of-housing"
-                    value="apartments"
+                    id="apartments"
                   >
+                <label class="control" for="apartments">
                    Апартаменты
                 </label>
               </li>
@@ -143,26 +144,35 @@
 
           <fieldset class="filters-group">
             <legend class="filters-group-title">Стоимость, ₽:</legend>
-            <label class="filters-price">от
+            <label class="min-price" for="min_price">
               <input
                 class="catalog-price-input"
-                type="number"
-                name="price-min"
+                type="text"
                 value="0"
-                placeholder="минимальное значение"
+                id="min_price"
                 required
               >
+              <span class="price-text">от</span>
             </label>
-            <label class="filters-price">до
+            <label class="max-price" for="max-price">
               <input
                 class="catalog-price-input"
-                type="number"
-                name="price-max"
+                type="text"
                 value="9000"
-                placeholder="максимальное значение"
+                id="max-price"
                 required
               >
+              <span class="price-text">до</span>
            </label>
+
+            <div class="range-controls">
+              <div class="price-line">
+                <div class="line-bar"></div>
+              </div>
+
+              <button class="togle-min"></button>
+              <button class="togle-max"></button>
+            </div>
           </fieldset>
 
           <div class="filters-buttons">

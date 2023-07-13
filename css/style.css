@@ -120,8 +120,23 @@ body {
 }
 
 .actions-favorite-link {
+  position: relative;
   background-image: url(../img/heart.svg);
   margin-right: 20px;
+}
+
+.actions-favorite-number {
+  position: absolute;
+  top: 12px;
+  left: 19px;
+  padding-top: 3px;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  font-size: 10px;
+  color: #FFFFFF;
+  background-color: #7DB54F;
 }
 
 .actions-button-link {
@@ -469,7 +484,7 @@ body {
   background-image: url(../img/header-hotels.jpg);
   background-size: cover;
   background-color: #F2F2F2;
-  padding: 35px 70px 37px;
+  padding: 35px 70px 39px;
   margin: 0;
   margin-bottom: 50px;
 }
@@ -525,22 +540,25 @@ body {
 
 .filters {
   display: flex;
-  justify-content: space-between;
 }
 
 .filters-group {
   border: none;
-  color: var(--white-color);
+  color: #FFFFFF;
   padding: 0;
   margin: 0;
 }
 
 .filters-group:nth-child(1) {
-  padding-right: 45px;
+  padding-right: 67px;
 }
 
 .filters-group:nth-child(2) {
-  padding-right: 140px;
+  padding-right: 150px;
+}
+
+.filters-group:nth-child(3) {
+  padding-right: 68px;
 }
 
 .filters-group-title {
@@ -559,10 +577,62 @@ body {
 }
 
 .filters-item {
+  position: relative;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+}
+
+.filters-item input {
+  position: absolute;
+  background-color: #FFFFFF;
+  opacity: 0;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.control {
+  padding-left: 36px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.chekbox-form input:checked + label::before {
+  background-image: url(../img/checkbox.svg);
+  background-repeat: no-repeat;
+}
+
+.chekbox-form input + label::before,
+.chekbox-form input:checked + label::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.radio-form input:checked + label::before {
+  background-image: url(../img/radio.svg);
+  background-repeat: no-repeat;
+}
+
+.radio-form input + label::before, .radio-form input:checked + label::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #FFFFFF;
+  border-radius: 50%;
 }
 
 .filters-item:not(:last-child) {
@@ -587,6 +657,70 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-top: 55px;
+}
+
+.min-price {
+  position: relative;
+  display: inline-block;
+}
+
+.min-price input {
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.max-price {
+  position: relative;
+}
+
+.max-price input {
+  border-radius: 0 4px 4px 0;
+  border: none;
+}
+
+.price-text {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.range-controls {
+  position: relative;
+  margin-top: 44px;
+}
+
+.price-line {
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.line-bar {
+  width: 72%;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.togle-min, .togle-max {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.togle-max {
+  left: 72%;
 }
 
 .filters-button {
@@ -655,8 +789,8 @@ body {
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  flex-wrap: wrap;
-  gap: 20px;
+  row-gap: 20px;
+  column-gap: 18px;
   list-style: none;
   padding: 0;
   margin-top: 0;
@@ -721,6 +855,12 @@ body {
   min-width: 140px;
 }
 
+.hotel-card-info .stars-4 {
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
+  margin-top: 11px;
+}
+
 .hotel-card-rating {
   font-weight: 400;
   font-size: 16px;
@@ -737,8 +877,8 @@ body {
   position: absolute;
   content: '';
   width: 1060px;
-  height: 0;
-  border: 1px solid #E6E6E6;
+  height: 1px;
+  background-color: #E6E6E6;
   top: 0;
   right: 0;
   left: 0;
