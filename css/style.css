@@ -644,6 +644,7 @@ body {
 }
 
 .catalog-price-input {
+  font-family: PT-Sans, sans-serif;
   padding: 12px 20px;
   font-weight: 700;
   font-size: 18px;
@@ -747,7 +748,6 @@ body {
 .hotels-found {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 40px;
 }
 
@@ -760,6 +760,7 @@ body {
 }
 
 .select-control {
+  font-family: PT-Sans, sans-serif;
   min-width: 292px;
   max-height: 49px;
   padding: 14px 20px;
@@ -769,7 +770,13 @@ body {
   color: #333333;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  margin-left: 200px;
   margin-right: 70px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 
 .card-toggle-list {
@@ -780,11 +787,33 @@ body {
   gap: 8px;
 }
 
-.card-toggle-item {
+.card-grid-toggle {
+  display: block;
+  width: 48px;
+  height: 48px;
   padding: 12px 15px;
   border: 2px solid var(--button-inactive);
   border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.mode-tile {
+  background-image: url(../img/mode-tile.svg);
+}
+
+.mode-slideshow {
+  background-image: url(../img/mode-slideshow.svg);
+}
+
+.mode-list {
+  background-image: url(../img/mode-list.svg);
+}
+
+.card-grid-toggle-current {
+  border: 2px solid #000000;
+}
+
 
 .hotel-list {
   display: grid;
@@ -855,10 +884,30 @@ body {
   min-width: 140px;
 }
 
-.hotel-card-info .stars-4 {
+.button-favorites-current {
+  background-color: rgba(125, 181, 79, 1);
+}
+
+.hotel-card-stars {
   background-image: url(../img/star.svg);
-  background-repeat: no-repeat;
-  margin-top: 11px;
+  background-repeat: space;
+  width: 18px;
+  height: 17px;
+  margin: 0;
+  background-position: 0 50%;
+  align-self: center;
+}
+
+.hotel-card-info .stars-4 {
+  width: 88px;
+}
+
+.hotel-card-info .stars-3 {
+  width: 63px;
+}
+
+.hotel-card-info .stars-3 {
+  width: 43px;
 }
 
 .hotel-card-rating {
@@ -910,7 +959,7 @@ body {
   background-color: #82B3D3;
 }
 
-.pagination-dots {
+.pagination-current {
   color: #000000;
   background-color: #F2F2F2;
 }
