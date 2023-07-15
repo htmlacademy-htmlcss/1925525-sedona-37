@@ -26,8 +26,8 @@
             <li class="main-menu-item">
               <a class="main-menu-link" href="#">О Cедоне</a>
             </li>
-            <li class="main-menu-item main-menu-item--current">
-              <a class="main-menu-link" href="#">Гостиницы</a>
+            <li class="main-menu-item">
+              <a class="main-menu-link main-menu-item--current" href="#">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -45,7 +45,7 @@
             </a>
           </li>
           <li class="actions-item">
-            <a class="button actions-button-link" href="#">Хочу сюда!</a>
+            <a class="button actions-button-link button-brown" href="#" type="disabled">Хочу сюда!</a>
           </li>
         </ul>
       </header>
@@ -144,39 +144,41 @@
 
           <fieldset class="filters-group">
             <legend class="filters-group-title">Стоимость, ₽:</legend>
-            <label class="min-price" for="min_price">
-              <input
-                class="catalog-price-input"
-                type="text"
-                value="0"
-                id="min_price"
-                required
-              >
-              <span class="price-text">от</span>
-            </label>
-            <label class="max-price" for="max-price">
-              <input
-                class="catalog-price-input"
-                type="text"
-                value="9000"
-                id="max-price"
-                required
-              >
-              <span class="price-text">до</span>
-           </label>
+            <div class="price-inputs">
+              <label class="min-price" for="min_price">
+                <input
+                  class="catalog-price-input"
+                  type="text"
+                  value="0"
+                  id="min_price"
+                  required
+                >
+                <span class="price-text">от</span>
+              </label>
+              <label class="max-price" for="max-price">
+                <input
+                  class="catalog-price-input"
+                  type="text"
+                  value="9000"
+                  id="max-price"
+                  required
+                >
+                <span class="price-text">до</span>
+             </label>
+            </div>
 
             <div class="range-controls">
               <div class="price-line">
                 <div class="line-bar"></div>
               </div>
 
-              <button class="togle-min"></button>
-              <button class="togle-max"></button>
+              <button class="togle-min" type="button"></button>
+              <button class="togle-max" type="button"></button>
             </div>
           </fieldset>
 
           <div class="filters-buttons">
-            <button class="button button-blue filters-button" type="submit">Применить</button>
+            <button class="button button-blue filters-button" type="button">Применить</button>
             <button class="button button-reset filters-button" type="reset">Сбросить</button>
           </div>
         </form>
@@ -230,8 +232,8 @@
               <div class="hotel-card-info">
                 <p class="hotel-card-status">Гостиница</p>
                 <p class="hotel-card-price">От 4000 ₽</p>
-                <a class="button button-about" href="#">Подробнее</a>
-                <button class="button button-favorites" type="button">В избранное</button>
+                <a class="button button-about button-brown" href="#">Подробнее</a>
+                <button class="button button-favorites button-blue" type="button">В избранное</button>
                 <p class="hotel-card-stars stars-4">
                   <span class="visually-hidden">4 звезды</span>
                 </p>
@@ -257,7 +259,7 @@
               <div class="hotel-card-info">
                 <p class="hotel-card-status">Гостиница</p>
                 <p class="hotel-card-price">От 5000 ₽</p>
-                <a class="button button-about" href="#">Подробнее</a>
+                <a class="button button-about button-brown" href="#">Подробнее</a>
                 <button class="button button-favorites button-favorites-current" type="button">в избранном</button>
                 <p class="hotel-card-stars stars-4">
                   <span class="visually-hidden">4 звезды</span>
@@ -284,8 +286,8 @@
               <div class="hotel-card-info">
                 <p class="hotel-card-status">Гостиница</p>
                 <p class="hotel-card-price">От 2500 ₽</p>
-                <a class="button button-about" href="#">Подробнее</a>
-                <button class="button button-favorites" type="button">В избранное</button>
+                <a class="button button-about button-brown" href="#">Подробнее</a>
+                <button class="button button-favorites button-blue" type="button">В избранное</button>
                 <p class="hotel-card-stars stars-3">
                   <span class="visually-hidden">3 звезды</span>
                 </p>
@@ -311,8 +313,8 @@
               <div class="hotel-card-info">
                 <p class="hotel-card-status">Гостиница</p>
                 <p class="hotel-card-price">От 1500 ₽</p>
-                <a class="button button-about" href="#">Подробнее</a>
-                <button class="button button-favorites" type="button">В избранное</button>
+                <a class="button button-about button-brown" href="#">Подробнее</a>
+                <button class="button button-favorites button-blue" type="button">В избранное</button>
                 <p class="hotel-card-stars stars-2">
                   <span class="visually-hidden">2 звезды</span>
                 </p>
