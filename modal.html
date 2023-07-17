@@ -45,7 +45,8 @@
             >
           </li>
           <li class="actions-item">
-            <a class="actions-link actions-favorite-link" href="#">
+            <a class="actions-link actions-favorite-link"
+               href="#">
               <span class="visually-hidden">Избранное.</span>
               <span class="actions-favorite-number">12</span>
             </a>
@@ -249,7 +250,7 @@
     </div>
 
     <div class="modal-container">
-      <div class="modal-wrapper">
+      <div class="modal-wrapper" data-test="modal">
         <div class="modal-header">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <button class="modal-close"></button>
@@ -257,25 +258,27 @@
 
         <form action="" class="modal-form">
           <div class="fiel-group">
-            <label for="" class="modal-label">Дата заезда:</label>
+            <label for="arrival-date" class="modal-label">Дата заезда:</label>
             <input
               type="text"
               class="modal-search-input"
               id="arrival-date"
               value="27 апреля 2020"
+              placeholder="Укажите дату"
             />
-            <span class="error">Мы не можем отправить вас в прошлое.</span>
+            <span class="error date-description">Мы не можем отправить вас в прошлое.</span>
           </div>
 
           <div class="fiel-group">
-            <label for="" class="modal-label">Дата выезда:</label>
+            <label for="return-date" class="modal-label">Дата выезда:</label>
             <input
               type="text"
               class="modal-search-input"
-              id="arrival-date"
+              id="return-date"
               value="1 сентября 2021"
+              placeholder="Укажите дату"
             />
-            <span class="correct-date"
+            <span class="correct-date date-description"
               >На эти даты есть свободные номера. Пока есть.</span
             >
           </div>
@@ -283,7 +286,7 @@
           <div class="quantity">
             <div for="" class="group-adults">
               <div class="quantity-control">
-                <label for="" class="modal-label group-adults-label"
+                <label for="adults" class="modal-label group-adults-label"
                   >Взрослые:</label
                 >
 
@@ -301,12 +304,13 @@
                   class="group-input field"
                   type="text"
                   name="adults"
+                  id="adults"
                   min="0"
-                  value="2"
-                  required=""
+                  placeholder="1"
+                  required
                 />
 
-                <button class="modal-button modal-minus" type="button">
+                <button class="modal-button modal-plus" type="button">
                   <svg width="20" height="20" viewBox="0 0 20 20">
                     <path
                       d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"
@@ -320,7 +324,7 @@
 
             <div class="group-children">
               <div class="quantity-control">
-                <label for="" class="modal-label group-children-label"
+                <label for="children" class="modal-label group-children-label"
                   >Дети:</label
                 >
                 <div class="tooltip">
@@ -357,13 +361,14 @@
                 <input
                   class="group-input field"
                   type="text"
-                  name="adults"
+                  name="children"
+                  id="children"
                   min="0"
-                  value="2"
-                  required=""
+                  placeholder="0"
+                  required
                 />
 
-                <button class="modal-button modal-minus" type="button">
+                <button class="modal-button modal-plus" type="button">
                   <svg width="20" height="20" viewBox="0 0 20 20">
                     <path
                       d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"
