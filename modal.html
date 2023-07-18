@@ -9,13 +9,13 @@
 
   <body>
     <div class="wrapper">
-      <header class="main-header" data-test="header">
+      <header class="main-header">
         <a class="logo-link" href="index.html" aria-current="page">
           <img
             src="img/logo.svg"
             width="140"
             height="70"
-            alt="Логотип Седона."
+            alt="logo sedona"
             class="image-logo"
           />
         </a>
@@ -46,23 +46,22 @@
             >
           </li>
           <li class="actions-item">
-            <a class="actions-link actions-favorite-link" href="#">
+            <a class="actions-link actions-favorite-link"
+               href="#">
               <span class="visually-hidden">Избранное.</span>
               <span class="actions-favorite-number">12</span>
             </a>
           </li>
           <li class="actions-item">
-            <a
-              class="button actions-button-link button-brown"
-              href="#"
+            <a class="button actions-button-link button-brown" href="#"
               >Хочу сюда!</a
             >
           </li>
         </ul>
       </header>
 
-      <main class="main-content" data-test="main">
-        <section class="banner" data-test="hero">
+      <main class="main-content">
+        <section class="banner">
           <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
           <img
             class="banner-img"
@@ -73,7 +72,7 @@
           />
         </section>
 
-        <section class="benefits" data-test="advantages">
+        <section class="benefits">
           <h2 class="benefits-title">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
           </h2>
@@ -83,7 +82,7 @@
 
           <ul class="benefits-list">
             <li class="benefits-item benefits-item--blue">
-              <div class="benefits-item-wrapper benefits-item-text">
+              <div class="benefits-item-text">
                 <h3 class="benefits-item-title benefits-item--white">
                   Настоящий городок
                 </h3>
@@ -93,31 +92,23 @@
               </div>
               <img
                 src="./img/photo-1.jpg"
-                alt="Городок."
+                alt="Городок"
                 class="benefits-item-img"
-                width="800"
-                height="385"
               />
             </li>
-            <li
-              class="benefits-item benefits-item-wrapper benefits-item--light"
-            >
+            <li class="benefits-item benefits-item--light">
               <h3 class="benefits-item-title">Небольшая площадь</h3>
               <p class="benefits-item-description">
                 Все достопримечательности находятся очень близко
               </p>
             </li>
-            <li
-              class="benefits-item benefits-item-wrapper benefits-item--light"
-            >
+            <li class="benefits-item benefits-item--light">
               <h3 class="benefits-item-title">Красивая дорога</h3>
               <p class="benefits-item-description">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
-            <li
-              class="benefits-item benefits-item-wrapper benefits-item--light"
-            >
+            <li class="benefits-item benefits-item--light">
               <h3 class="benefits-item-title">Мало туристов</h3>
               <p class="benefits-item-description">
                 Большинство едет в Гранд Каньон и толпится там
@@ -126,13 +117,11 @@
             <li class="benefits-item benefits-item--blue">
               <img
                 src="./img/photo-2.jpg"
-                alt="Гранд Каньон."
+                alt="Гранд Каньон"
                 class="benefits-item-img"
-                width="800"
-                height="385"
               />
 
-              <div class="benefits-item-wrapper benefits-item-text">
+              <div class="benefits-item-text">
                 <h3 class="benefits-item-title benefits-item--white">
                   Там есть мост&nbsp;дьявола
                 </h3>
@@ -144,7 +133,7 @@
           </ul>
         </section>
 
-        <section class="services" data-test="service">
+        <section class="services">
           <h2 class="services-title">
             Приезжайте в Седону отдохнуть в&nbsp;комфорте и уюте!
           </h2>
@@ -184,7 +173,7 @@
           </ul>
         </section>
 
-        <section class="search" data-test="search">
+        <section class="search">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне.</h2>
           <h2 class="search-title">Заинтересовались?</h2>
           <p class="search-description">
@@ -196,7 +185,8 @@
           </button>
         </section>
 
-        <section class="subscription" data-test="subscribe">
+        <!-- subscription -->
+        <section class="subscription">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-description">
             Только полезная информация и никакого спама, честное бойскаутское!
@@ -206,14 +196,10 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <label class="visually-hidden" for="subscribe-email">
-              E-mail
-            </label>
             <input
               class="subscription-email"
               type="email"
               name="email"
-              id="subscribe-email"
               placeholder="Ваш e-mail"
               required
             />
@@ -265,7 +251,7 @@
     </div>
 
     <div class="modal-container">
-      <div class="modal-wrapper">
+      <div class="modal-wrapper" data-test="modal">
         <div class="modal-header">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <button class="modal-close"></button>
