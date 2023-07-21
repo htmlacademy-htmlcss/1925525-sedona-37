@@ -81,6 +81,7 @@ body {
 
 .main-menu-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   align-items: center;
   gap: 32px;
@@ -123,8 +124,8 @@ body {
   display: flex;
   align-items: center;
   margin: 0;
-  margin-left: auto;
   padding: 0;
+  padding-left: 300px;
 }
 
 .actions-link {
@@ -167,6 +168,7 @@ body {
   line-height: 20px;
   padding: 8px 34px;
   height: 36px;
+  width: 160px;
 }
 
 .button-brown:hover {
@@ -188,7 +190,7 @@ body {
 .banner {
   position: relative;
   background-image: url(../img/banner-background.jpg);
-  background-color: #F2F2F2;
+  background-color: #8DAAC2;
   background-repeat: no-repeat;
   height: 485px;
   text-align: center;
@@ -238,7 +240,6 @@ body {
 .benefits-list {
   display: grid;
   grid-template-columns: repeat(3, 400px);
-  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -320,7 +321,7 @@ body {
   text-align: center;
   color: #333333;
   width: 230px;
-  margin-top: 63px;
+  margin-top: 39px;
   margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
@@ -332,6 +333,7 @@ body {
 
 .benefits-item-text .benefits-item-description {
   color: #FFFFFF;
+  margin-top: 61px;
 }
 
 /*services*/
@@ -387,7 +389,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 30px;
 }
 
@@ -445,6 +447,7 @@ body {
   background-image: url(../img/banner-email.jpg);
   background-size: cover;
   background-color: #8DAAC2;
+  overflow: hidden;
   padding-top: 97px;
   padding-bottom: 104px;
   color: #FFFFFF;
@@ -516,10 +519,10 @@ body {
 .intro {
   background-image: url(../img/header-hotels.jpg);
   background-size: cover;
-  background-color: #F2F2F2;
+  background-color: #8DAAC2;
   padding: 35px 70px 39px;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .hotels-title {
@@ -999,6 +1002,10 @@ body {
   align-self: center;
 }
 
+.hotel-card-info .hotel-card-stars {
+  margin: 0;
+}
+
 .hotel-card-info .stars-4 {
   width: 88px;
 }
@@ -1007,7 +1014,7 @@ body {
   width: 63px;
 }
 
-.hotel-card-info .stars-3 {
+.hotel-card-info .stars-2 {
   width: 43px;
 }
 
