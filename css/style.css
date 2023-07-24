@@ -447,6 +447,7 @@ body {
 .subscription {
   text-align: center;
   background-image: url(../img/banner-email.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-color: #8DAAC2;
   overflow: hidden;
