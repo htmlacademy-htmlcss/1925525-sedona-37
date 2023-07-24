@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -479,7 +481,7 @@ body {
 
 .subscription-email {
   color: #000000;
-  font-family: 'PT-Sans';
+  font-family: 'PT-Sans', sans-serif;
   box-shadow: none;
   border: none;
   padding: 14px 20px;
