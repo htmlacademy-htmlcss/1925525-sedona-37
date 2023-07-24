@@ -256,8 +256,8 @@ body {
 .benefits-item-wrapper,
 .benefits-item-text {
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 70px 85px;
 }
 
